@@ -627,4 +627,4 @@ if st.session_state.map_ready and res:
         st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown("---")
-st.caption("Developed for Nagpur City Safety Awareness Dashboard")
+st.caption("© 2026 SafeBag – Smart Safety Handbag | Developed for Nagpur City Safety Awareness Dashboard")
