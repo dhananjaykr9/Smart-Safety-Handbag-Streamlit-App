@@ -121,7 +121,7 @@ st.divider()
 # ---------------- Feature Cards ----------------
 c1, c2, c3 = st.columns(3)
 with c1:
-    st.markdown('<div class="card" style="border-left:6px solid #ff6b6b;"><h4>📡 Safety Device</h4>ESP32-based smart handbag continuously transmits GPS, SOS and motion alerts to Firebase.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="card" style="border-left:6px solid #ff6b6b;"><h4>📡 IoT Safety Device</h4>ESP32-based smart handbag continuously transmits GPS, SOS and motion alerts to Firebase.</div>', unsafe_allow_html=True)
 with c2:
     st.markdown('<div class="card" style="border-left:6px solid #ffa502;"><h4>🤖 ML Risk Engine</h4>Crime-type classification and real-time risk scoring using Random Forest models.</div>', unsafe_allow_html=True)
 with c3:
