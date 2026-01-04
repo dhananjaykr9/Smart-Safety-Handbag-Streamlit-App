@@ -140,5 +140,5 @@ st.markdown("""
 | ℹ **About Project** | Architecture, methodology & academic overview |
 """)
 
-st.info("👈 Use the sidebar to open different modules.")
+st.info("👈 System modules are accessible through the left navigation panel.")
 st.markdown("""<hr><center>© 2026 Smart Safety Handbag | JD College of Engineering & Management, Nagpur</center>""", unsafe_allow_html=True)
