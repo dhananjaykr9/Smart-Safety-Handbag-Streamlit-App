@@ -82,7 +82,7 @@ if logo_base64:
 
 # ---------------- Header ----------------
 if logo_base64:
-    st.markdown(f'<img src="data:image/png;base64,{logo_base64}" width="220" class="centered-img">', unsafe_allow_html=True)
+    st.markdown(f'<img src="data:image/png;base64,{logo_base64}" width="300" class="centered-img">', unsafe_allow_html=True)
 
 st.markdown('<div class="title">SafeBag: Smart Safety Handbag</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub">Real-Time IoT | Machine Learning Risk Prediction | GIS Safe Routing</div>', unsafe_allow_html=True)
