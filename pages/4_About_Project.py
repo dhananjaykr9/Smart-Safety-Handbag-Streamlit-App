@@ -46,9 +46,9 @@ st.divider()
 st.markdown("""
 <div class="about-card" style="border-left:6px solid #ff6b6b;">
 <h3>🎯 Project Objective</h3>
-SafeBag is a prototype women-safety system that demonstrates how a wearable IoT device can
-integrate with cloud infrastructure, machine learning models and geospatial routing
-to provide situational crime-risk awareness and safer navigation support.
+SafeBag is a prototype women-safety system that demonstrates how a carry-on smart accessory (handbag) 
+equipped with an embedded IoT module can integrate with cloud infrastructure, machine learning models, 
+and geospatial routing to provide situational crime-risk awareness and safer navigation support.
 </div>
 """, unsafe_allow_html=True)
 
