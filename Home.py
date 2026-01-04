@@ -59,6 +59,10 @@ text-align:center;}
     border-radius:16px;
     border:1px solid #444859;
     box-shadow:0 8px 18px rgba(0,0,0,.35);
+    height:170px;                /* 🔒 FIXED HEIGHT */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 .centered-img{display:block;margin:auto;border-radius:14px;}
 </style>
@@ -101,7 +105,7 @@ def check_worker_alive():
             return False
         ts = int(r.json().get("ts", 0))
         now = int(time.time() * 1000)
-        return (now - ts) < 15000   # 15 second threshold
+        return (now - ts) < 15000
     except:
         return False
 
@@ -109,10 +113,8 @@ fb_ok = check_firebase()
 worker_ok = check_worker_alive()
 
 s1, s2 = st.columns(2)
-with s1:
-    st.metric("Firebase Connection", "Online" if fb_ok else "Offline")
-with s2:
-    st.metric("ML Worker Status", "Running" if worker_ok else "Stopped")
+with s1: st.metric("Firebase Connection", "Online" if fb_ok else "Offline")
+with s2: st.metric("ML Worker Status", "Running" if worker_ok else "Stopped")
 
 st.divider()
 
